@@ -11,7 +11,7 @@ export default function LoginComponent() {
   const login = async () => {
     try {
       let res = await LoginAPI(credentails.email, credentails.password);
-      toast.success("Signed In to Linkedin!");
+      toast.success("Signed In to SeekMe!");
       localStorage.setItem("userEmail", res.user.email);
       navigate("/home");
     } catch (err) {
